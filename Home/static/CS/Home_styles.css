@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4c380;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 4px 2px -2px gray;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: #28b487;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.contact-btn {
+    background-color: #5a5a5a;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #f4c380;
+}
+
+
+.appointment-btn {
+    background-color: #28b487;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.yvofit-logo {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: -500px; /* Adjust to move it further left */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-section {
+    width: 35%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4C2B15;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button.appointment-btn {
+    background-color: #32E3B4;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+button.appointment-btn:hover {
+    background-color: #2bcca0;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.coach-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.signature {
+    width: 150px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Pacifico', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "Crimson Pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 1.5; /* Adjust based on preference */
+    color: rgb(0, 0, 0);
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 18px;
+    line-height: 33px;
+}

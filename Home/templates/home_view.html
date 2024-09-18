@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yvovit | Uw Leefstijl Coach</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CS/Home_styles.css' %}">    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{% static 'IM/Logo.jpg' %}" alt="Yvonne Aaldering" class="yvofit-logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">OVER MIJ</a></li>
+                <li><a href="#">DIENSTEN</a></li>
+                <li><a href="#">THEMA'S</a></li>
+                <li><a href="#">VITALITEIT CHECK</a></li>
+                <li><a href="#">NIEUWS</a></li>
+                <li><a href="#" class="contact-btn">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>   
+        <div class="container">
+            <div class="left-section">
+                <h2>Ik ben Yvonne Aaldering</h2>
+                <p>Heb jij een hoog ziekteverzuim, daardoor productie verlies, hoge verzuimkosten en extra belasting van je medewerkers hierdoor?</p>
+                <p>Weet jij niet hoe je je verzuim omlaag kan brengen door meer vitaliteit bij je werknemers? Graag help ik jouw medewerkers stap voor stap naar een gezondere leefstijl.</p>
+                <p>Hoe zou het voor je zijn als jouw medewerkers zich vitaler, weerbaarder voelen, minder werkstress en meer werkplezier ervaren en daardoor het verzuim omlaag gaat.</p>
+                <p>Bekijk eens hoeveel kosten je daarmee kan besparen op jaarbasis. Een zieke medewerker kost al gauw 7000 per maand.</p>
+                <p>Mijn kracht zit in het praktisch meedenken welke adviezen en acties bij jouw bedrijf passen. Zodat het op de lange termijn ook werkt en vol te houden is.</p>
+                <button class="appointment-btn">Maak een afspraak</button>
+                <p class="small-text">Plan een vrijblijvend 30 minuten inspiratiegesprek.</p>
+            </div>
+            <div class="right-section">
+                <h3>Uw leefstijl coach voor een vitale werkomgeving</h3>
+                <img src="{% static 'IM/yvofit-home-2.png' %}" alt="Yvonne Aaldering" class="yvonne-image">
+            </div>
+        </div>
+</body>
+</html>
