@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
+
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f4c380;
+    background-color: #fff;
 }
 
 header {
@@ -54,7 +56,7 @@ header ul li a {
     display: flex;
     justify-content: space-between;
     padding: 50px 10%;
-    background-color: #f4c380;
+    background-color: #F4C37E;
 }
 
 
@@ -72,27 +74,35 @@ header ul li a {
     width: 200px;
     height: auto;
     margin-top: 10px;
-    margin-left: -500px; /* Adjust to move it further left */
+    margin-left: -500px; 
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100vw;
+    height: 90vh; 
+    background-color: #f4c380;
+    box-sizing: border-box; 
 }
 
 .left-section {
-    width: 60%;
+    width: 50%; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start; 
+    margin-left: 516px;
+    margin-top: 124px;
+    padding-left: 0; 
+    width: 30vw;
 }
 
 .right-section {
     width: 35%;
-    text-align: center;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: -100px;
 }
 
 h2 {
@@ -111,7 +121,7 @@ p {
 
 button.appointment-btn {
     background-color: #32E3B4;
-    color: white;
+    color: black;
     padding: 15px 30px;
     border: none;
     cursor: pointer;
@@ -158,8 +168,9 @@ h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 46px;
-    line-height: 1.5; /* Adjust based on preference */
+    line-height: 1.5; 
     color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow with slight blur */
 }
 
 p {
@@ -169,4 +180,481 @@ p {
     color: rgb(80, 69, 56);
     font-size: 18px;
     line-height: 33px;
+}
+.yvonne-image {
+    width: 80%;
+    margin-left: 200px;   
+    margin-top: -35px;   
+}
+
+.container_scroll {
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #fff;
+    margin-top: -40px;
+}
+
+.Big_text_scroll {
+    font-family: "Crimson Pro", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 73px;
+    color: rgb(0, 0, 0);
+    margin: -42px 440px 0 440px; 
+    margin-top: 120px;
+}
+
+.container_mij {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #fff;
+}
+
+.left-section_mij {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 20px;
+    background-color: #fff;
+}
+
+.right-section_mij {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+.container_mij {
+    display: flex;
+    justify-content: flex-start; 
+    gap: -40px; 
+    padding: 200px 10%;
+    background-color: #fff;
+}
+
+.left-section_mij {
+    width: 45%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 350px; 
+    background-color: #fff;
+}
+
+.yvofit-fruitschaal {
+    margin-top: 375px; 
+    width: 95%; 
+    margin-bottom: 20px; 
+    border-radius: 14px; 
+}
+
+.zwembad-dolfijn {
+    width: 80%; 
+    margin-bottom: 20px; 
+    border-radius: 14px; 
+    margin-left: 40px; 
+}
+
+.right-section_mij {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    margin-right: 600px; 
+}
+
+.title-overmij {
+    font-family: 'Pacifico', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.subtitle-overmij {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    line-height: 67px;
+}
+
+.mij-text {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 18px;
+    line-height: px;
+}
+
+.mij-btn {
+    background-color: #32E3B4;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-top: 20px;
+    width: fit-content;
+}
+.card {
+    background-color: #4ca686; 
+    width: 70%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+    font-family: 'Arial', sans-serif; 
+    margin-top: -200px;
+}
+
+.card h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #f8f8f8;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.card .button {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #4ca686;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card .button:hover {
+    background-color: #f0f0f0;
+    color: #4ca686;
+}
+
+.card .indicator {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.card .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card .dot.active {
+    background-color: #333;
+}
+.content-wrapper_bericht {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.content-box_bericht {
+    width: 30%;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.content-box_bericht:hover {
+    transform: translateY(-10px);
+}
+
+.content-image_bericht {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+.content-box_bericht h2 {
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content-box_bericht p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.reviews-section_bericht {
+    margin: 50px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.reviews-section_bericht h3 {
+    font-size: 28px;
+    color: #333;
+    font-family: 'Pacifico', cursive;
+}
+
+.subtitle-vitaliteits {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    margin-top: 300px;
+}
+.reviews {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.reviews h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 28px;
+    color: #000;
+}
+
+.reviews h3 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.review {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #b5651d;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.quote {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+}
+
+.quote-icon {
+    font-size: 24px;
+    color: #f1c40f;
+}
+
+.emoji {
+    font-size: 20px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.customer-reviews-title {
+    font-family: 'Pacifico', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0); 
+    font-size: 24px;
+    line-height: 36px ;
+    margin-left: 660px;
+    margin-top: 300px;
+}
+
+.customer-reviews {
+    font-family: "Crimson Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    line-height: 62px;
+    margin-left: 660px;
+}
+.title-reviews {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.subtitle-reviews {
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.reviews-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 100px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.review-box-left, .review-box-right {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.reviewer-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.reviewer-feedback {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.quote-icon {
+    color: #F2BC63; /* Adjust this color as needed */
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 40px;
+    font-size: 16px;
+    color: #333;
+}
+
+.main-content {
+    padding: 100px 20px;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.contact-section {
+    background-color: #F4C37E; 
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 36px; 
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin: 10px 0 20px;
+    color: #666;
+    font-size: 18px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px; 
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group.half-width {
+    flex-direction: row; 
+    gap: 20px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 18px; 
+    width: 100%;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px;
+    background-color: #4D4035;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #333;
 }
