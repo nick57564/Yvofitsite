@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
 
-
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -9,7 +8,7 @@ body {
 
 header {
     background-color: #fff;
-    padding: 10px 0;
+    padding: 1.8%;
     box-shadow: 0px 4px 2px -2px gray;
 }
 
@@ -71,12 +70,21 @@ header ul li a {
 }
 
 .yvofit-logo {
-    width: 200px;
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 175px; 
     height: auto;
-    margin-top: 10px;
-    margin-left: -500px; 
 }
-
+.nav-menu{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(0, 0, 0); /* or just black */
+    font-size: 16px;
+    line-height: 20px;
+    padding: 1%;
+}
 .container {
     display: flex;
     justify-content: space-between;

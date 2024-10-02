@@ -1,3 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render 
 
-# Create your views here.
+def About_view(request): 
+    return render(request, "about_view.html") 

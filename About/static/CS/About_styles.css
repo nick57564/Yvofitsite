@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+}
+
+header {
+    background-color: #fff;
+    padding: 1.8%;
+    box-shadow: 0px 4px 2px -2px gray;    
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: #28b487;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.contact-btn {
+    background-color: #5a5a5a;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #F4C37E;
+}
+
+
+.appointment-btn {
+    background-color: #28b487;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.yvofit-logo {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 175px; 
+    height: auto;
+}
+.nav-menu{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(0, 0, 0); /* or just black */
+    font-size: 16px;
+    line-height: 20px;
+    padding: 1%;
+}
+.container-about {
+    background-color: #F4C37E;
+    display: flex;
+    justify-content: space-between;
+    height: 813px;
+    width: 100%;
+  }
+    
+.text-section h2 {
+    font-family: 'sans-serif', Pacifico;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 13.5%; 
+    margin-left: 22.5%;
+  }
+  
+.text-section h1 {
+    font-family: 'Crimson Pro';
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 96px;
+    line-height: 96px;
+    margin-top: -0.2%; 
+    margin-left: 22.5%;
+    max-width: 40%;
+  }
+  
+.text-section p {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 18px;
+    line-height: 33px;
+    margin-top: -0.2%; 
+    margin-left: 22.5%;
+    max-width: 52%;
+  }
+  
+button:hover {
+    background-color: #2BB3A5;
+  }
+  
+.image-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+} 
+
+.image-section img {
+    width: 130%; 
+    height: auto; 
+}
+.elementor-widget-container h2 {
+    font-family: 'Crimson Pro';
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    line-height: 62px;
+    margin-left: 22.75%;
+    margin-top: 6%;
+    max-width: 60%;
+}
+
+.container-intrigeren {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20%;
+  }
+
+  .text-intrigeren h2 {
+    font-family: 'sans-serif', Pacifico;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 5%;
+  }
+  
+.text-intrigeren h1 {
+    font-family: 'Crimson Pro';
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    line-height: 67px;
+    margin-left: 5%;
+  }
+  
+.text-intrigeren p {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 18px;
+    line-height: 33px;
+    max-width: 52%;
+    margin-left: 5%;
+  }
+
+.image-intrigeren {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 30%;
+} 
+
+.image-intrigeren img {
+    width: 190%; 
+    height: auto;
+    border-radius: 8px; 
+}
+
+
+ 
+  
