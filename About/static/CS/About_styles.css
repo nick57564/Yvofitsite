@@ -196,7 +196,60 @@ button:hover {
     height: auto;
     border-radius: 8px; 
 }
+.elementor-section {
+    padding: 10%;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 100%; 
+}
+
+.elementor-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 40%; 
+    margin-left: 20%;
+
+}
+
+.elementor-column {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
 
 
- 
-  
+.elementor-icon-wrapper {
+    margin-bottom: 15px;
+}
+
+.elementor-icon {
+    font-size: 50px;
+    color: #2FA582;
+}
+
+
+.elementor-heading-title {
+    font-family: 'Crimson Pro';
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.elementor-section-title {
+    font-family: 'Crimson Pro';
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    line-height: 62px;
+}
