@@ -89,8 +89,7 @@ header ul li a {
     display: flex;
     justify-content: space-between;
     padding: 40px;
-    width: 100vw;
-    height: 90vh; 
+    height: 40%; 
     background-color: #f4c380;
     box-sizing: border-box; 
 }
@@ -100,27 +99,27 @@ header ul li a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
-    margin-left: 516px;
-    margin-top: 124px;
+    margin-left: 15%;
+    margin-top: 7.5%;
     padding-left: 0; 
-    width: 30vw;
+    width: 40%;
 }
 
 .right-section {
     width: 35%;
     text-align: left;
-    margin-top: 80px;
-    margin-left: -100px;
+    margin-top: 5%;
+    
 }
 
-h2 {
+.left-section h2 {
     font-family: 'Cursive', sans-serif;
     font-size: 32px;
     margin-bottom: 20px;
     color: #4C2B15;
 }
 
-p {
+.left-section p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -135,8 +134,8 @@ button.appointment-btn {
     cursor: pointer;
     font-size: 16px;
     border-radius: 25px;
-    margin-top: 20px;
     width: fit-content;
+    margin-left: -1%;
 }
 
 button.appointment-btn:hover {
@@ -161,7 +160,7 @@ button.appointment-btn:hover {
     margin-top: 20px;
 }
 
-h2 {
+.container_scroll .h2 {
     font-family: 'Pacifico', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -169,19 +168,21 @@ h2 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 20px;
+    
 }
 
-h3 {
+.right-section h3 {
     font-family: "Crimson Pro", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 46px;
     line-height: 1.5; 
     color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow with slight blur */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    width: 80%;
 }
 
-p {
+.right-section_mij p {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -190,16 +191,17 @@ p {
     line-height: 33px;
 }
 .yvonne-image {
-    width: 80%;
-    margin-left: 200px;   
-    margin-top: -35px;   
+    width: 90%;
+    margin-left: 5%;   
+    margin-top: -3%;   
 }
 
 .container_scroll {
     justify-content: space-between;
     padding: 50px 10%;
-    background-color: #fff;
-    margin-top: -40px;
+    margin-top: 1%;
+    width: 95%;
+    margin-left: -10%;
 }
 
 .Big_text_scroll {
@@ -217,6 +219,8 @@ p {
     justify-content: space-between;
     padding: 50px 10%;
     background-color: #fff;
+    width: 100%;
+    
 }
 
 .left-section_mij {
@@ -229,7 +233,7 @@ p {
 }
 
 .right-section_mij {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -269,12 +273,10 @@ p {
 }
 
 .right-section_mij {
-    width: 50%; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #fff;
     margin-right: 600px; 
 }
 
@@ -301,8 +303,7 @@ p {
     font-style: normal;
     font-weight: 400;
     color: rgb(80, 69, 56);
-    font-size: 18px;
-    line-height: px;
+    font-size: 18px;     
 }
 
 .mij-btn {
@@ -313,9 +314,14 @@ p {
     cursor: pointer;
     font-size: 16px;
     border-radius: 25px;
-    margin-top: 20px;
     width: fit-content;
+    margin-left: 1%;
 }
+
+.yvofit-bank{
+    width: 100%;
+}
+
 .card {
     background-color: #4ca686; 
     width: 70%;
@@ -582,7 +588,7 @@ p {
 }
 
 .quote-icon {
-    color: #F2BC63; /* Adjust this color as needed */
+    color: #F2BC63;
     font-size: 24px;
     font-weight: bold;
     margin-right: 5px;
@@ -595,47 +601,62 @@ p {
     color: #333;
 }
 
-.main-content {
-    padding: 100px 20px;
-    background-color: #F7F7F7;
-    text-align: center;
-}
-
-.main-content h1 {
-    font-size: 28px;
-    color: #333;
-}
 
 .contact-section {
     background-color: #F4C37E; 
     padding: 50px 20px;
-    text-align: center;
+    width: 100%;
+}
+
+.contact-info {
+    margin-left: 20%;
+}
+
+.contact-info h1 {
+    font-family: 'Pacifico', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 24px;
+    line-height: 36px;    
 }
 
 .contact-info h2 {
-    font-size: 36px; 
-    color: #333;
-    font-weight: bold;
+    font-family: "Crimson Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    line-height: 67px;
 }
 
 .contact-info p {
-    margin: 10px 0 20px;
-    color: #666;
-    font-size: 18px; 
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 18px;
+    line-height: 33px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
     gap: 20px;
     max-width: 700px; 
     margin: 0 auto;
+    margin-left: 0;
+    margin-left: 20%;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     text-align: left;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56); /* or just black */
+    font-size: 18px;
+    line-height: 33px;
 }
 
 .form-group.half-width {
@@ -660,9 +681,28 @@ button {
     cursor: pointer;
     font-size: 16px;
     width: 150px;
-    margin: 0 auto;
+    margin: 1%;
 }
 
 button:hover {
     background-color: #333;
+}
+
+.main-content {
+    padding: 100px 20px;
+    margin-left: 10%;
+}
+
+.fas.fa-bullhorn {
+    font-size: 50px;   
+    color: #6ADAB4;    
+    margin-right: 10%; 
+}
+
+.main-content h1 {
+    font-family: "Crimson Pro", sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0); 
+    font-size: 48px;
+    line-height: 62px;
 }
