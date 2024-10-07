@@ -1,2 +1,1 @@
-"# Yvofitsite" 
-"# Djangoyvofit" 
+#This is a website dummy to program again in php
