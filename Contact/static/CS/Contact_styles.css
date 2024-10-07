@@ -241,6 +241,7 @@ button:hover {
 .container_reviews {
     display: flex;
     max-width: 100%;
+    margin-bottom: 5%;
 }
 
 .left_section_reviews{
@@ -299,4 +300,262 @@ button:hover {
     width: 130px;
     background: rgb(204, 195, 194);
     display: block;
+}
+.container_evaring {    
+    background-color: #504538;
+    width: 100%;
+    display: flex;
+}
+.first_section h2 {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 69px;
+    line-height: 69px;
+}
+
+.first_section h1 {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    line-height: 48px;
+}
+.second_section h2 {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255); 
+    font-size: 69px;
+    line-height: 69px;
+}
+
+.second_section h1 {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255); 
+    font-size: 19px;
+    line-height: 48px;
+}
+.third_section h2 {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255); 
+    font-size: 69px;
+    line-height: 69px;
+}
+
+.third_section h1 {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255); 
+    font-size: 19px;
+    line-height: 48px;
+}
+
+.first_section{
+    margin-left: 30%;
+}
+
+.second_section{
+    margin-left: 10%;
+}
+
+.third_section{
+    margin-left: 10%;
+}
+.Reviews_vitaliteit {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.Reviews_vitaliteit h2{
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 42px;
+    line-height: 55px;
+}
+.Reviews_vitaliteit h1{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(80, 69, 56);
+    font-size: 18px;
+    line-height: 33px;
+    
+}
+
+.container_Inschrijven{
+    margin-left: 33%;
+}
+
+.first_section_Inschrijven,
+.second_section_Inschrijven,
+.third_section_Inschrijven,
+.fourth_section_Inschrijven {
+    padding: 10px;
+    border: 1px solid #F4F4F4;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.first_section_Inschrijven h2,
+.second_section_Inschrijven h2,
+.third_section_Inschrijven h2,
+.fourth_section_Inschrijven h2{
+    font-family: "Crimson Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 55px;
+    color: rgb(0, 0, 0);
+}
+
+.first_section_Inschrijven h1,
+.second_section_Inschrijven h1,
+.third_section_Inschrijven h1,
+.fourth_section_Inschrijven h1{
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: rgb(80, 69, 56);
+}
+
+a.Inschrijven_button {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #65D7B4;
+    color: black; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    text-align: center; 
+    transition: background-color 0.3s ease; 
+}
+
+a.Inschrijven_button:hover {
+    background-color: #52C4A2; 
+}
+
+a.check_button {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #65D7B4;
+    color: black; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    text-align: center; 
+    transition: background-color 0.3s ease; 
+    margin-top: 3%;
+    margin-left: 45%;
+    margin-bottom: 3%;
+}
+
+a.check_button:hover {
+    background-color: #52C4A2; 
+}
+
+.container_contact {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #504538;
+    color: #ffffff;
+}
+
+/* Styling for the left, middle, and right sections */
+.left_section, .middle_section, .right_section {
+    width: 30%;
+    line-height: 1.8;
+}
+
+/* Links */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Services styling */
+.middle_section h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.middle_section ul li {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Contact info styling */
+.right_section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #42C59C; /* Light green for phone numbers */
+}
+
+.right_section a {
+    color: #42C59C;
+    text-decoration: none;
+}
+
+.right_section a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Section */
+.social_media_section {
+    margin-top: 20px;
+}
+
+.social_media_section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social_media_section ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.social_media_section ul li {
+    margin-right: 15px;
+}
+
+.social_media_section ul li a img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%); /* Makes icons white */
 }

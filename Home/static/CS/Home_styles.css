@@ -522,76 +522,87 @@ button.appointment-btn:hover {
     color: #333;
 }
 
-.customer-reviews-title {
-    font-family: 'Pacifico', sans-serif;
-    font-weight: 400;
+.Reviews_qoutes h2 {
+    font-family: Pacifico, sans-serif;
     font-style: normal;
+    font-weight: 400;
     color: rgb(0, 0, 0); 
     font-size: 24px;
-    line-height: 36px ;
-    margin-left: 660px;
-    margin-top: 300px;
+    line-height: 36px;
+    margin-left: 20%;
+    margin-top: 2%;
 }
-
-.customer-reviews {
+.Reviews_qoutes h1 {
     font-family: "Crimson Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); 
     font-size: 48px;
     line-height: 62px;
-    margin-left: 660px;
-}
-.title-reviews {
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    font-weight: 600;
-    margin: 20px 0;
+    margin-left: 20%;
 }
 
-.subtitle-reviews {
-    text-align: center;
-    font-size: 20px;
-    color: #555;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-.reviews-wrapper {
+.container_reviews {
     display: flex;
-    justify-content: space-between;
-    margin: 40px 100px;
-    padding: 20px;
-    background-color: #fff;
+    max-width: 100%;
 }
 
-.review-box-left, .review-box-right {
-    width: 45%;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.left_section_reviews{
+    margin-left: 20%;
+    max-width: 25%;
 }
 
-.reviewer-name {
+.right_section_reviews{
+    margin-left: 3%;
+    max-width: 25%;
+}
+
+.right_section_reviews h2{
+    font-family: "Crimson Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(204, 195, 194);
+    font-size: 42px;
+    line-height: 55px;
+}
+
+.left_section_reviews h2{
+    font-family: "Crimson Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(204, 195, 194);
+    font-size: 42px;
+    line-height: 55px;
+}
+
+.right_section_reviews p{
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
     font-size: 18px;
-    font-weight: bold;
-    color: #333;
+    line-height: 33px;
 }
 
-.reviewer-feedback {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
+.left_section_reviews p{
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 18px;
+    line-height: 33px;
 }
-
-.quote-icon {
-    color: #F2BC63;
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 5px;
+.fas.fa-quote-right {  
+    font-size: 25px;  
+    color: #F4C37E;    
+    margin-right: 1%; 
+}
+.hr-lines:after {
+    content: " ";
+    height: 2px;
+    width: 130px;
+    background: rgb(204, 195, 194);
+    display: block;
 }
 
 .footer-text {
@@ -705,4 +716,9 @@ button:hover {
     color: rgb(0, 0, 0); 
     font-size: 48px;
     line-height: 62px;
+}
+.container_evaring {    
+    background-color: #504538;
+    width: 100%;
+    display: flex;
 }
