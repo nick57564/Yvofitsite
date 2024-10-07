@@ -79,8 +79,224 @@ header ul li a {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
-    color: rgb(0, 0, 0); /* or just black */
+    color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 20px;
     padding: 1%;
+}
+
+.container_Header_vitaliteit {
+    width: 100%;
+    height: 10%; 
+    background-color: #F4C37E;
+    padding: 1%;
+    text-align: center;
+    
+}
+.Header_vitaliteit_check h2 {
+    font-family: "Crimson Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.container_vitaliteit {
+    display: flex;
+    background-color: #F4C37E;
+    max-width: 100%;
+    padding-bottom: 3%;
+
+}
+
+.left_section_vitaliteit {
+    width: 100%;
+    max-width: 30%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 1%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="tel"], 
+input[type="email"], 
+textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #F4F4F4;
+    border-radius: 18px;
+    font-size: 16px;
+    background-color: #F4F4F4;
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input:focus, 
+textarea:focus {
+    border-color: #39b54a;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #504538;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #34a045;
+}
+
+::placeholder {
+    color: #AEA9A4;
+}
+
+.right_section_vitaliteit{
+    margin-left: 3%;
+   
+}
+
+.right_section_vitaliteit h2{
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.right_section_vitaliteit h1{
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(255, 255, 255); 
+    font-size: 18px;
+    line-height: 33px;
+    width: 60%;
+}
+
+.right_section_vitaliteit p{
+    font-family: "Crimson Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 33px;
+    
+}
+.fas.fa-check {  
+    color: #6ADAB4;    
+    margin-right: 1%; 
+}
+.Reviews_qoutes h2 {
+    font-family: Pacifico, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(0, 0, 0); 
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+.Reviews_qoutes h1 {
+    font-family: "Crimson Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(0, 0, 0); 
+    font-size: 48px;
+    line-height: 62px;
+    margin-left: 20%;
+}
+
+.container_reviews {
+    display: flex;
+    max-width: 100%;
+}
+
+.left_section_reviews{
+    margin-left: 20%;
+    max-width: 25%;
+}
+
+.right_section_reviews{
+    margin-left: 3%;
+    max-width: 25%;
+}
+
+.right_section_reviews h2{
+    font-family: "Crimson Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(204, 195, 194);
+    font-size: 42px;
+    line-height: 55px;
+}
+
+.left_section_reviews h2{
+    font-family: "Crimson Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(204, 195, 194);
+    font-size: 42px;
+    line-height: 55px;
+}
+
+.right_section_reviews p{
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 18px;
+    line-height: 33px;
+}
+
+.left_section_reviews p{
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 18px;
+    line-height: 33px;
+}
+.fas.fa-quote-right {  
+    font-size: 25px;  
+    color: #F4C37E;    
+    margin-right: 1%; 
+}
+.hr-lines:after {
+    content: " ";
+    height: 2px;
+    width: 130px;
+    background: rgb(204, 195, 194);
+    display: block;
 }
