@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yvovit | Uw Leefstijl Coach</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CS/Blog_styles.css' %}">    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{% static 'IM/Logo.jpg' %}" alt="Yvonne Aaldering" class="yvofit-logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">OVER MIJ</a></li>
+                <li><a href="#">DIENSTEN</a></li>
+                <li><a href="#">THEMA'S</a></li>
+                <li><a href="#">VITALITEIT CHECK</a></li>
+                <li><a href="#">NIEUWS</a></li>
+                <li><a href="#" class="contact-btn">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-about">
+        <div class="text-section">
+            <h2>Blog</h2>
+            <h1>Mijn laatste vitaliteitsberichten</h1>
+            <p>Als leefstijlcoach help ik mensen graag stap voor stap naar een gezondere leefstijl. Daarbij lever ik maatwerk en kijken we bewust naar haalbare doelen op het gebied van voeding, beweging, stress, slaap of ontspanning.</p>
+        </div>
+        <div class="image-section">
+            <img src="{% static 'IM/Yvofit-Transparant-Klein-9-1.png' %}" alt="Yvonne Transparant" class="yvofit-Transparant">
+        </div>
+    </div>
+</body>
+</html>

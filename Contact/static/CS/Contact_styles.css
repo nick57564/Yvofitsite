@@ -480,14 +480,10 @@ a.check_button:hover {
 .container_contact_inner{
     margin-left: 20%;
     display: flex;
-    
-
 }
 
 .left_section, .middle_section, .right_section {
     margin-right: 10%;
-    
-    
 }
 
 .left_section a {
