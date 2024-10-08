@@ -472,22 +472,33 @@ a.check_button:hover {
 }
 
 .container_contact {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
+    width: 100%;  
     background-color: #504538;
     color: #ffffff;
+    padding-top: 2%;
+}
+.container_contact_inner{
+    margin-left: 20%;
+    display: flex;
+    
+
 }
 
-/* Styling for the left, middle, and right sections */
 .left_section, .middle_section, .right_section {
-    width: 30%;
-    line-height: 1.8;
+    margin-right: 10%;
+    
+    
 }
 
-/* Links */
+.left_section a {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255); 
+    font-size: 18px;
+    line-height: 20px;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -506,42 +517,23 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-/* Services styling */
 .middle_section h2 {
-    margin-bottom: 20px;
-    font-size: 20px;
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255); 
+    font-size: 38px;
+    line-height: 38px;
+    margin-top: 2%;
 }
 
 .middle_section ul li {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(106, 218, 180);
     font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* Contact info styling */
-.right_section h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: #42C59C; /* Light green for phone numbers */
-}
-
-.right_section a {
-    color: #42C59C;
-    text-decoration: none;
-}
-
-.right_section a:hover {
-    text-decoration: underline;
-}
-
-/* Social Media Section */
-.social_media_section {
-    margin-top: 20px;
-}
-
-.social_media_section p {
-    font-size: 16px;
-    margin-bottom: 10px;
+    line-height: 30px;
 }
 
 .social_media_section ul {
@@ -554,8 +546,36 @@ ul li a:hover {
     margin-right: 15px;
 }
 
-.social_media_section ul li a img {
-    width: 40px;
-    height: 40px;
-    filter: invert(100%); /* Makes icons white */
+
+
+.fa-facebook, .fa-instagram, .fa-youtube, .fa-linkedin {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background: #68C6B8; 
+    border-radius: 50%; 
+    color: black;
+}
+.fas.fa-phone-alt {  
+    font-size: 25px;  
+    color: #6ADAB4;    
+    margin-right: 2%; 
+}
+.far.fa-envelope {  
+    font-size: 25px;  
+    color: #6ADAB4;    
+}
+.right_section {
+    font-family: "Crimson Pro", sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    line-height: 25px; 
+    color: rgb(255, 255, 255);
 }
