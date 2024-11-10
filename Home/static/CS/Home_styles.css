@@ -92,31 +92,35 @@ header ul li a {
     height: 40%; 
     background-color: #f4c380;
     box-sizing: border-box; 
+    width: 100%; 
 }
 
 .left-section {
-    width: 50%; 
+    width: 55%; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
-    margin-left: 15%;
+    margin-left: 7.5%;
     margin-top: 7.5%;
     padding-left: 0; 
-    width: 40%;
 }
 
 .right-section {
-    width: 35%;
+    width: 55%;
     text-align: left;
     margin-top: 5%;
+    margin-left: 1%;
     
 }
 
 .left-section h2 {
-    font-family: 'Cursive', sans-serif;
-    font-size: 32px;
+    font-family: 'Pacifico', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 24px;
+    line-height: 36px;
     margin-bottom: 20px;
-    color: #4C2B15;
 }
 
 .left-section p {
@@ -191,9 +195,8 @@ button.appointment-btn:hover {
     line-height: 33px;
 }
 .yvonne-image {
-    width: 90%;
-    margin-left: 5%;   
-    margin-top: -3%;   
+    width: 80%; 
+    margin-bottom: 0%;   
 }
 
 .container_scroll {
