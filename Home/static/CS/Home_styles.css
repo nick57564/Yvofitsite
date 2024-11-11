@@ -10,6 +10,11 @@ header {
     background-color: #fff;
     padding: 1.8%;
     box-shadow: 0px 4px 2px -2px gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header nav {
@@ -20,31 +25,41 @@ header nav {
     margin: 0 auto;
 }
 
-header .logo h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 24px;
-    color: #28b487;
+header .logo {
+    flex-shrink: 0;
 }
 
-header ul {
+header .logo img {
+    width: 175px;
+    height: auto;
+}
+
+.nav-menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-header ul li {
+.nav-menu li {
     margin-right: 20px;
 }
 
-header ul li a {
+.nav-menu li a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 5px 10px;
+}
+
+.nav-menu li a:hover {
+    color: #28b487;
 }
 
 .contact-btn {
-    background-color: #5a5a5a;
+    background-color: #28b487;;
     color: white;
     padding: 8px 15px;
     border-radius: 20px;
@@ -379,60 +394,6 @@ button.appointment-btn:hover {
     gap: 8px;
 }
 
-.card .dot {
-    width: 12px;
-    height: 12px;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.card .dot.active {
-    background-color: #333;
-}
-.content-wrapper_bericht {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 20px;
-}
-
-.content-box_bericht {
-    width: 30%;
-    background-color: #F6F6F6;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.content-box_bericht:hover {
-    transform: translateY(-10px);
-}
-
-.content-image_bericht {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
-}
-
-.content-box_bericht h2 {
-    font-size: 24px;
-    font-family: 'Work Sans', sans-serif;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.content-box_bericht p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-}
-
 .reviews {
     text-align: center;
     padding: 50px 0;
@@ -606,8 +567,8 @@ button.appointment-btn:hover {
     max-width: 100%;
     margin: auto;
     margin-top: 10%;
-    background-color: #f4c380;
-    padding-bottom: 3%;
+    /* background-color: #f4c380; */
+    padding-bottom: 10%;
 }
 
 .content_pijnpunten {
@@ -653,4 +614,120 @@ button.appointment-btn:hover {
     object-fit: cover;
     margin-top: 15%;
     margin-left: 7.5%;
+}
+
+.container_contact {
+    width: 100%;  
+    background-color: #504538;
+    color: #ffffff;
+    padding-top: 2%;
+}
+.container_contact_inner{
+    margin-left: 20%;
+    display: flex;
+}
+
+.left_section, .middle_section, .right_section {
+    margin-right: 10%;
+}
+
+.left_section a {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255); 
+    font-size: 18px;
+    line-height: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.middle_section h2 {
+    font-family: 'Crimson Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(255, 255, 255); 
+    font-size: 38px;
+    line-height: 38px;
+    margin-top: 2%;
+}
+
+.middle_section ul li {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(106, 218, 180);
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.social_media_section ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.social_media_section ul li {
+    margin-right: 15px;
+}
+
+.fa-facebook, .fa-instagram, .fa-youtube, .fa-linkedin {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background: #68C6B8; 
+    border-radius: 50%; 
+    color: black;
+}
+
+.fas.fa-phone-alt {  
+    font-size: 25px;  
+    color: #6ADAB4;    
+    margin-right: 2%; 
+}
+
+.far.fa-envelope {  
+    font-size: 25px;  
+    color: #6ADAB4;    
+}
+
+.right_section {
+    font-family: "Crimson Pro", sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    line-height: 25px; 
+    color: rgb(255, 255, 255);
+}
+
+.right_section a {
+    color: rgb(255, 255, 255);
+    text-decoration: none; 
+}
+
+.right_section a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline; 
 }
