@@ -80,7 +80,7 @@ header ul li a {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
-    color: rgb(0, 0, 0); /* or just black */
+    color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 20px;
     padding: 1%;
@@ -433,28 +433,6 @@ button.appointment-btn:hover {
     color: #666;
 }
 
-.reviews-section_bericht {
-    margin: 50px auto;
-    max-width: 1200px;
-    text-align: center;
-}
-
-.reviews-section_bericht h3 {
-    font-size: 28px;
-    color: #333;
-    font-family: 'Pacifico', cursive;
-}
-
-.subtitle-vitaliteits {
-    font-family: 'Crimson Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 62px;
-    color: rgb(0, 0, 0); 
-    text-align: center;
-    margin-top: 300px;
-}
 .reviews {
     text-align: center;
     padding: 50px 0;
@@ -615,27 +593,29 @@ button.appointment-btn:hover {
     color: #333;
 }
 
-
-.contact-section {
-    background-color: #F4C37E; 
-    padding: 50px 20px;
+.container_evaring {    
+    background-color: #504538;
     width: 100%;
+    display: flex;
 }
 
-.contact-info {
-    margin-left: 20%;
+.container_pijnpunten {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10%;
+    background-color: #f4c380;
+    padding-bottom: 3%;
 }
 
-.contact-info h1 {
-    font-family: 'Pacifico', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: rgb(80, 69, 56);
-    font-size: 24px;
-    line-height: 36px;    
+.content_pijnpunten {
+    max-width: 50%;
+    margin-left: 15%;
 }
 
-.contact-info h2 {
+.content_pijnpunten h1 {
     font-family: "Crimson Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -644,8 +624,15 @@ button.appointment-btn:hover {
     line-height: 67px;
 }
 
-.contact-info p {
-    font-family: 'Work Sans', sans-serif;
+.approach-list_pijnpunten {
+    list-style-type: none;
+}
+
+.approach-list_pijnpunten li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+    font-family: "Work Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     color: rgb(80, 69, 56);
@@ -653,75 +640,17 @@ button.appointment-btn:hover {
     line-height: 33px;
 }
 
-form {
-    gap: 20px;
-    max-width: 700px; 
-    margin: 0 auto;
-    margin-left: 0;
-    margin-left: 20%;
+.approach-list_pijnpunten li::before {
+    content: '●';
+    color: #00c18d;
+    font-size: 1.5rem;
+    line-height: 1;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: rgb(80, 69, 56); /* or just black */
-    font-size: 18px;
-    line-height: 33px;
-}
-
-.form-group.half-width {
-    flex-direction: row; 
-    gap: 20px;
-}
-
-input, textarea {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 18px; 
-    width: 100%;
-    font-size: 16px;
-}
-
-button {
-    padding: 15px;
-    background-color: #4D4035;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 150px;
-    margin: 1%;
-}
-
-button:hover {
-    background-color: #333;
-}
-
-.main-content {
-    padding: 100px 20px;
-    margin-left: 10%;
-}
-
-.fas.fa-bullhorn {
-    font-size: 50px;   
-    color: #6ADAB4;    
-    margin-right: 10%; 
-}
-
-.main-content h1 {
-    font-family: "Crimson Pro", sans-serif;
-    font-weight: 400;
-    color: rgb(0, 0, 0); 
-    font-size: 48px;
-    line-height: 62px;
-}
-.container_evaring {    
-    background-color: #504538;
-    width: 100%;
-    display: flex;
+.image_pijnpunten img {
+    width: 75%;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-top: 15%;
+    margin-left: 7.5%;
 }
