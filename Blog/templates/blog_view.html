@@ -35,5 +35,24 @@
             <img src="{% static 'IM/Yvofit-Transparant-Klein-9-1.png' %}" alt="Yvonne Transparant" class="yvofit-Transparant">
         </div>
     </div>
+    <div class="container_card">
+        <div class="row">
+            {% for mymodel in mymodels %}
+                <div class="section_card">
+                    <div class="card">
+                        {% if mymodel.image %}
+                            <img src="{{ mymodel.image.url }}" class="card-img-top" alt="{{ mymodel.title }}">
+                        {% else %}
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="No image available">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ mymodel.title }}</h5>
+                            <p class="card-text">{{ mymodel.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </body>
 </html>
