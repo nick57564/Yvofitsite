@@ -8,8 +8,12 @@ body {
 
 header {
     background-color: #fff;
-    padding: 1.8%;
-    box-shadow: 0px 4px 2px -2px gray;    
+    padding: 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header nav {
@@ -20,36 +24,48 @@ header nav {
     margin: 0 auto;
 }
 
-header .logo h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 24px;
-    color: #28b487;
+header .logo {
+    flex-shrink: 0;
 }
 
-header ul {
+header .logo img {
+    margin-top: 1%;
+    width: 10%;
+    height: auto;
+}
+
+.nav-menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-header ul li {
+.nav-menu li {
     margin-right: 20px;
 }
 
-header ul li a {
+.nav-menu li a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 5px 10px;
+}
+
+.nav-menu li a:hover {
+    color: #28b487;
 }
 
 .contact-btn {
-    background-color: #5a5a5a;
+    background-color: #28b487;;
     color: white;
     padding: 8px 15px;
     border-radius: 20px;
     text-transform: uppercase;
 }
+
 .intro {
     display: flex;
     justify-content: space-between;
@@ -68,6 +84,39 @@ header ul li a {
     margin-top: 20px;
 }
 
+.yvofit-logo {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 175px; 
+    height: auto;
+}
+.nav-menu{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 20px;
+    padding: 1%;
+}
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #F4C37E;
+}
+
+
+.appointment-btn {
+    background-color: #28b487;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+}
 .yvofit-logo {
     position: absolute;
     top: 1%;
@@ -574,4 +623,13 @@ ul li a:hover {
     font-size: 20px; 
     line-height: 25px; 
     color: rgb(255, 255, 255);
+}
+.right_section a {
+    color: rgb(255, 255, 255);
+    text-decoration: none; 
+}
+
+.right_section a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline; 
 }

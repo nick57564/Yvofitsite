@@ -19,13 +19,10 @@
                 <img src="{% static 'IM/Logo.jpg' %}" alt="Yvonne Aaldering" class="yvofit-logo">
             </div>
             <ul class="nav-menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">OVER MIJ</a></li>
-                <li><a href="#">DIENSTEN</a></li>
-                <li><a href="#">THEMA'S</a></li>
-                <li><a href="#">VITALITEIT CHECK</a></li>
-                <li><a href="#">NIEUWS</a></li>
-                <li><a href="#" class="contact-btn">CONTACT</a></li>
+                <li><a class="nav-link" href="{% url 'base_view' %}">HOME</a></li>
+                <li><a class="nav-link" href="{% url 'about_view' %}">DIENSTEN</a></li>
+                <li><a class="nav-link" href="{% url 'blog_view' %}">BLOG</a></li>
+                <li><a class="contact-btn" href="{% url 'contact_view' %}">CONTACT</a></li>
             </ul>
         </nav>
     </header>

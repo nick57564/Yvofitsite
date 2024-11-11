@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     "About",
     "Contact",
     "Blog",
-    "Form",
 ]
 
 MIDDLEWARE = [
