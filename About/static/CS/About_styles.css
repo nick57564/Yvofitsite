@@ -123,7 +123,7 @@ header .logo img {
     font-weight: 400;
     color: rgb(0, 0, 0);
     font-size: 96px;
-    line-height: 96px;
+    line-height: 70px;
     margin-top: -0.2%; 
     margin-left: 22.5%;
     max-width: 40%;
@@ -195,7 +195,7 @@ button:hover {
     color: rgb(80, 69, 56);
     font-size: 18px;
     line-height: 33px;
-    max-width: 52%;
+    max-width: 50%;
     margin-left: 5%;
   }
 
@@ -207,7 +207,7 @@ button:hover {
 } 
 
 .image-intrigeren img {
-    width: 190%; 
+    width: 400%; 
     height: auto;
     border-radius: 8px; 
 }
@@ -320,7 +320,7 @@ form {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    color: rgb(80, 69, 56); /* or just black */
+    color: rgb(80, 69, 56);
     font-size: 18px;
     line-height: 33px;
 }
@@ -357,6 +357,7 @@ button:hover {
 .main-content {
     padding: 100px 20px;
     margin-left: 10%;
+    margin-top: 5%;
 }
 
 .fas.fa-bullhorn {
@@ -371,4 +372,51 @@ button:hover {
     color: rgb(0, 0, 0); 
     font-size: 48px;
     line-height: 62px;
+}
+
+.container-Vitaliteit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+
+  .text-Vitaliteit h2 {
+    font-family: 'sans-serif', Pacifico;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 5%;
+  }
+  
+.text-Vitaliteit h1 {
+    font-family: 'Crimson Pro';
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    line-height: 67px;
+    margin-left: 5%;
+  }
+  
+.text-Vitaliteit p {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 18px;
+    line-height: 33px;
+    max-width: 50%;
+    margin-left: 5%;
+  }
+
+.image-Vitaliteit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 10%;
+} 
+
+.image-Vitaliteit img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px; 
 }
