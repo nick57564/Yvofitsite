@@ -31,24 +31,29 @@
             <h2>Vraag de gratis (online) vitaliteit check aan</h2>
         </div>
     </div>
-    
     <div class="container_vitaliteit">
         <div class="left_section_vitaliteit">
-            <form action="#">
-                <div class="form-group">
-                    <input type="text" placeholder="Naam" id="name" required>
+            {% if messages %}
+                <div class="container">
+                    <ul class="messages">
+                        {% for message in messages %}
+                            <div class="alert alert-warning alert-dismissible fade show">
+                                {{ message }}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        {% endfor %}
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Telefoonnummer" id="phone" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" placeholder="Bericht" required></textarea>
-                </div>
-                <button type="submit">Versturen</button>
-            </form>
+            {% endif %}
+            <div class="container">
+                <form class="form" method="post" action=".">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary">Verstuur</button>
+                </form>
+            </div>
         </div>
         <div class="right_section_vitaliteit">
             <h2>Wil jij meer vitaal zijn?</h2>
