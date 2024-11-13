@@ -35,6 +35,9 @@
             <img src="{% static 'IM/Yvofit-Transparant-Klein-9-1.png' %}" alt="Yvonne Transparant" class="yvofit-Transparant">
         </div>
     </div>
+    <div class="text-header">
+        <h2>Dagelijks houd ik me bezig met het coachen, motiveren, trainen en begeleiden van mensen om zo het beste resultaat te behalen.</h2>
+    </div>
     <div class="container_card">
         <div class="row">
             {% for mymodel in mymodels %}
@@ -48,6 +51,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ mymodel.title }}</h5>
                             <p class="card-text">{{ mymodel.description }}</p>
+                            <p class="card-date">{{ mymodel.date }}</p>
                         </div>
                     </div>
                 </div>
