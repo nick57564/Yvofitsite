@@ -731,3 +731,5 @@ ul li a:hover {
     color: rgb(255, 255, 255);
     text-decoration: underline; 
 }
+@media (max-width: 900px) {
+}
