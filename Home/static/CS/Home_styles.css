@@ -257,6 +257,7 @@ button.appointment-btn:hover {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: #fff;
+    margin-right: 20%; 
 }
 
 .container_mij {
@@ -264,15 +265,6 @@ button.appointment-btn:hover {
     justify-content: flex-start; 
     gap: -40px; 
     padding: 200px 10%;
-    background-color: #fff;
-}
-
-.left-section_mij {
-    width: 45%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 350px; 
     background-color: #fff;
 }
 
@@ -288,14 +280,6 @@ button.appointment-btn:hover {
     margin-bottom: 20px; 
     border-radius: 14px; 
     margin-left: 40px; 
-}
-
-.right-section_mij {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right: 600px; 
 }
 
 .title-overmij {
@@ -731,5 +715,39 @@ ul li a:hover {
     color: rgb(255, 255, 255);
     text-decoration: underline; 
 }
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
+    .container_scroll {
+        justify-content: space-between;
+        padding: 50px 10%;
+        margin-top: 1%;
+        width: 150%;
+        margin-left: -35%;
+    }
+    .container_scroll .h2 {
+    font-family: 'Pacifico', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(80, 69, 56);
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    }
+    .left-section_mij {
+        width: 400%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-right: 20px;
+        background-color: #fff;
+    }
+    .right-section_mij {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #fff;
+        margin-right: 20%; 
+    }
+    
 }
