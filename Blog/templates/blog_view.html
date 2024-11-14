@@ -62,20 +62,18 @@
         <div class="container_contact_inner">
             <div class="left_section">
                 <ul>
-                    <li><a href="#">Mijn account</a></li>
-                    <li><a href="#">Over mij</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Healyworld.net</a></li>
-                    <li><a href="#">Privacy Beleid</a></li>
-                    <li><a href="#">Algemene Voorwaarden</a></li>
+                    <li><a class="nav-link" href="{% url 'base_view' %}">HOME</a></li>
+                    <li><a class="nav-link" href="{% url 'about_view' %}">DIENSTEN</a></li>
+                    <li><a class="nav-link" href="{% url 'blog_view' %}">BLOG</a></li>
+                    <li><a class="nav-link" href="{% url 'contact_view' %}">CONTACT</a></li>
                 </ul>
             </div>
             <div class="middle_section">
                 <h2>Diensten</h2>
                 <ul>
-                    <li><a href="#">VITALE WERKOMGEVING!</a></li>
-                    <li><a href="#">PERSOONLIJKE COACHING MEDEWERKERS</a></li>
-                    <li><a href="#">VITALITEITS TRAININGEN VOOR GROEPEN</a></li>
+                    <li><a class="nav-link" href="{% url 'about_view' %}">VITALE WERKOMGEVING!</a></li>
+                    <li><a class="nav-link" href="{% url 'about_view' %}">PERSOONLIJKE COACHING MEDEWERKERS</a></li>
+                    <li><a class="nav-link" href="{% url 'about_view' %}">VITALITEITS TRAININGEN VOOR GROEPEN</a></li>
                 </ul>
             </div>
             <div class="right_section">
