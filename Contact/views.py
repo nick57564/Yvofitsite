@@ -20,9 +20,9 @@ def Contact_view(request):
                 'telefoonnummer': telefoonnummer,
                 'opmerkingen': opmerkingen,
             })
-            send_mail('The contact form subject', 'This is the message', 'rondirksbadkamers@gmail.com', ['rondirksbadkamers@gmail.com'], html_message=html)
-            messages.success(request, "Formulier verzonden, hartelijk dank wij nemen zo snel mogelijk contact met u op!")
-            return redirect('contact') 
+            send_mail('The contact form subject', 'This is the message', 'yvonne@yvofit.nl', ['yvonne@yvofit.nl'], html_message=html)
+            messages.success(request, "Formulier verzonden, hartelijk dank!")
+            return redirect('contact_view') 
             
     else:
         form = ContactForm()
