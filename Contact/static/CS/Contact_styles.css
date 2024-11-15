@@ -408,7 +408,7 @@ button:hover {
 }
 
 .first_section{
-    margin-left: 30%;
+    margin-left: 27.5%;
 }
 
 .second_section{
@@ -632,4 +632,44 @@ ul li a:hover {
 .right_section a:hover {
     color: rgb(255, 255, 255);
     text-decoration: underline; 
+}
+@media (max-width: 1050px) {
+    .container_Header_vitaliteit {
+        width: 100%;
+        height: 10%; 
+        background-color: #F4C37E;
+        padding: 2%;
+        text-align: center;
+
+    }
+    .Header_vitaliteit_check h2 {
+        font-family: "Crimson Pro", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        font-size: 48px;
+        line-height: 58px;
+        padding-top: 5%;
+    }
+    .container_reviews {
+        display: flex;
+        max-width: 100%;
+        margin-bottom: 5%;
+    }  
+    .left_section_reviews{
+        margin-left: 20%;
+        max-width: 25%;
+    }  
+    .right_section_reviews{
+        margin-left: 5%;
+        max-width: 25%;
+    }
+    .container_evaring {    
+        background-color: #504538;
+        width: 100%;
+        display: flex;
+    }
+    .first_section{
+        margin-left: 20%;
+    }
 }

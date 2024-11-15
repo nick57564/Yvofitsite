@@ -425,6 +425,7 @@ button:hover {
     background-color: #504538;
     color: #ffffff;
     padding-top: 2%;
+    margin-top: 5%;
 }
 .container_contact_inner{
     margin-left: 20%;
@@ -534,4 +535,25 @@ ul li a:hover {
 .right_section a:hover {
     color: rgb(255, 255, 255);
     text-decoration: underline; 
+}
+@media (max-width: 1050px) {
+    .container-intrigeren {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20%;
+      }
+      .image-intrigeren {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: 30%;
+    } 
+    
+    .image-intrigeren img {
+        width: 250%; 
+        height: auto;
+        border-radius: 8px; 
+        margin-top: 30%;
+    }
+    
 }
