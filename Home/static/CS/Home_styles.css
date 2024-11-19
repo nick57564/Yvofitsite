@@ -37,8 +37,14 @@ header .logo img {
 .nav-menu {
     display: flex;
     list-style: none;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 20px;
     margin: 0;
-    padding: 0;
+    padding: 1%;
 }
 
 .nav-menu li {
@@ -66,13 +72,6 @@ header .logo img {
     text-transform: uppercase;
 }
 
-.intro {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 10%;
-    background-color: #F4C37E;
-}
-
 
 .appointment-btn {
     background-color: #28b487;
@@ -91,15 +90,7 @@ header .logo img {
     width: 175px; 
     height: auto;
 }
-.nav-menu{
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    line-height: 20px;
-    padding: 1%;
-}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -724,13 +715,13 @@ ul li a:hover {
         margin-left: -35%;
     }
     .container_scroll .h2 {
-    font-family: 'Pacifico', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: rgb(80, 69, 56);
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 20px;
+        font-family: 'Pacifico', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(80, 69, 56);
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 20px;
     }
     .left-section_mij {
         width: 400%;
@@ -750,4 +741,131 @@ ul li a:hover {
         margin-right: 20%; 
     }
     
+}
+@media (max-width: 850px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        height: 40%; 
+        background-color: #f4c380;
+        box-sizing: border-box; 
+        width: 135%; 
+    }
+    .left-section {
+        width: 150%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        margin-top: 7.5%;
+
+    }
+    .left-section h2 {
+        font-family: 'Pacifico', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(80, 69, 56);
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .left-section p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .right-section h3 {
+        font-family: "Crimson Pro", serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 1.5; 
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+        width: 80%;
+    }
+    .right-section {
+        width: 50%;
+        text-align: left;
+        margin-top: 5%;      
+    }
+    .yvonne-image {
+        width: 120%;   
+    }
+    header {
+        background-color: #fff;
+        padding: 2%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    
+    header .logo {
+        flex-shrink: 0;
+        margin-right: 5px;
+    }
+    
+    header .logo img {
+        width: auto;
+        height: 40px;
+        margin-top: 0;
+    }
+    
+    header nav {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        font-family: 'Work Sans', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+        padding-left: 40%;
+    }
+    
+    .nav-menu li {
+        margin-right: 15px;
+    }
+    
+    .nav-menu li:first-child {
+        margin-left: 0;
+    }
+    
+    .nav-menu li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 0;
+    }
+    
+    .nav-menu li a:hover {
+        color: #28b487;
+    }
+    
+    .contact-btn {
+        background-color: #28b487;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        margin-left: 10px;
+    }
 }
