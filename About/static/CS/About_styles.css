@@ -106,7 +106,7 @@ header .logo img {
     justify-content: space-between;
     height: 813px;
     width: 100%;
-  }
+}
     
 .text-section h2 {
     font-family: 'sans-serif', Pacifico;
@@ -154,6 +154,7 @@ button:hover {
     width: 130%; 
     height: auto; 
 }
+
 .elementor-widget-container h2 {
     font-family: 'Crimson Pro';
     font-weight: 400;
@@ -631,5 +632,53 @@ ul li a:hover {
         border-radius: 20px;
         text-transform: uppercase;
         margin-left: 10px;
+    }
+    .container-about {
+        background-color: #F4C37E;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 165%;
+    }
+    .text-section h2 {
+        padding-top: 5%;
+        font-family: 'sans-serif', Pacifico;
+        font-weight: 400;
+        color: rgb(80, 69, 56);
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 13.5%; 
+        margin-left: 22.5%;
+    }
+      
+    .text-section h1 {
+        font-family: 'Crimson Pro';
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        line-height: 70px;
+        margin-top: -0.2%; 
+        margin-left: 22.5%;
+        max-width: 70%;
+    }
+    .image-section {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    } 
+    
+    .image-section img {
+        width: 120%; 
+        height: auto; 
+    }
+    
+    .elementor-widget-container h2 {
+        font-family: 'Crimson Pro';
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        line-height: 62px;
+        margin-top: 15%;
+        max-width: 700px;
     }
 }
