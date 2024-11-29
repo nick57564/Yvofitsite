@@ -76,11 +76,16 @@ header .logo img {
 .appointment-btn {
     background-color: #28b487;
     color: white;
-    padding: 10px 20px;
+    padding: 5px;
     border-radius: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 20px; 
+    width: 180px;
+}
+
+button.appointment-btn:hover {
+    background-color: #2bcca0;
 }
 
 .yvofit-logo {
@@ -134,22 +139,6 @@ header .logo img {
     line-height: 1.6;
     margin-bottom: 20px;
     color: #333;
-}
-
-button.appointment-btn {
-    background-color: #32E3B4;
-    color: black;
-    padding: 15px 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 25px;
-    width: fit-content;
-    margin-left: -1%;
-}
-
-button.appointment-btn:hover {
-    background-color: #2bcca0;
 }
 
 .small-text {

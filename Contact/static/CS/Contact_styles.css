@@ -713,14 +713,14 @@ ul li a:hover {
         font-style: normal;
         font-weight: 500;
         color: rgb(0, 0, 0);
-        font-size: 16px;
+        font-size: 13px;
         line-height: 20px;
         margin: 0;
         padding-left: 40%;
     }
     
     .nav-menu li {
-        margin-right: 15px;
+        margin-right: 11px;
     }
     
     .nav-menu li:first-child {
@@ -730,7 +730,7 @@ ul li a:hover {
     .nav-menu li a {
         text-decoration: none;
         color: #000;
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 500;
         line-height: 20px;
         padding: 0;
@@ -746,6 +746,266 @@ ul li a:hover {
         padding: 8px 15px;
         border-radius: 20px;
         text-transform: uppercase;
-        margin-left: 10px;
+        margin-left: 5px;
+    }
+    .container_vitaliteit {
+        display: block;
+        background-color: #F4C37E;
+        padding-bottom: 3%;    
+    }
+    
+    .left_section_vitaliteit {
+        width: 100%;
+        padding: 20px;
+        padding-right: 200px;
+        background-color: #FFFFFF;
+        border-radius: 1%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-left: 26px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+        
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    input[type="text"], 
+    input[type="tel"], 
+    input[type="email"], 
+    textarea {
+        width: 270px;
+        padding: 12px;
+        border: 1px solid #F4F4F4;
+        border-radius: 18px;
+        font-size: 16px;
+        background-color: #F4F4F4;
+        transition: border-color 0.3s ease;
+    }
+    
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+    
+    input:focus, 
+    textarea:focus {
+        border-color: #39b54a;
+        outline: none;
+    }
+    
+    button {
+        padding: 12px;
+        background-color: #504538;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #34a045;
+    }
+    
+    ::placeholder {
+        color: #AEA9A4;
+    }
+    
+    .right_section_vitaliteit{
+        margin-left: 3%;       
+    }
+    
+    .right_section_vitaliteit h2{
+        font-family: "Work Sans", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        line-height: 42px;
+    }
+    
+    .right_section_vitaliteit h1{
+        font-family: "Work Sans", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(255, 255, 255); 
+        font-size: 18px;
+        line-height: 33px;
+        margin-left: 5%;
+    }
+    
+    .right_section_vitaliteit p{
+        font-family: "Crimson Pro", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        line-height: 33px;
+        width: 80%;
+        margin-left: 5%;
+    }
+    .Reviews_qoutes h2 {
+        font-family: Pacifico, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(0, 0, 0); 
+        font-size: 24px;
+        line-height: 36px;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+    .Reviews_qoutes h1 {
+        font-family: "Crimson Pro", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(0, 0, 0); 
+        font-size: 48px;
+        line-height: 62px;
+        margin-left: 15%;
+    }
+    .container_reviews {
+        display: flex;
+        max-width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .left_section_reviews{
+        margin-left: 10%;
+        max-width: 25%;
+    }
+    
+    .right_section_reviews{
+        margin-left: 25%;
+        max-width: 25%;
+    }
+    
+    .right_section_reviews h2{
+        font-family: "Crimson Pro", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(204, 195, 194);
+        font-size: 25px;
+        line-height: 55px;
+    }
+    
+    .left_section_reviews h2{
+        font-family: "Crimson Pro", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(204, 195, 194);
+        font-size: 25px;
+        line-height: 55px;
+    }
+    
+    .right_section_reviews p{
+        font-family: "Work Sans", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(80, 69, 56);
+        font-size: 18px;
+        line-height: 33px;
+    }
+    
+    .left_section_reviews p{
+        font-family: "Work Sans", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(80, 69, 56);
+        font-size: 18px;
+        line-height: 33px;
+    }
+    .fas.fa-quote-right {  
+        font-size: 25px;  
+        color: #F4C37E;    
+        margin-right: 1%; 
+    }
+    .hr-lines:after {
+        content: " ";
+        height: 2px;
+        width: 130px;
+        background: rgb(204, 195, 194);
+        display: block;
+    }
+    .container_evaring {    
+        background-color: #504538;
+        width: 100%;
+        display: flex;
+    }
+    .first_section h2 {
+        font-family: 'Crimson Pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        line-height: 69px;
+    }
+    
+    .first_section h1 {
+        font-family: 'Crimson Pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+        line-height: 48px;
+    }
+    .second_section h2 {
+        font-family: 'Crimson Pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(255, 255, 255); 
+        font-size: 30px;
+        line-height: 69px;
+    }
+    
+    .second_section h1 {
+        font-family: 'Crimson Pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(255, 255, 255); 
+        font-size: 10px;
+        line-height: 48px;
+    }
+    .third_section h2 {
+        font-family: 'Crimson Pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(255, 255, 255); 
+        font-size: 30px;
+        line-height: 69px;
+    }
+    
+    .third_section h1 {
+        font-family: 'Crimson Pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(255, 255, 255); 
+        font-size: 10px;
+        line-height: 48px;
+    }
+    
+    .first_section{
+        margin-left: 15%;
+    }
+    
+    .second_section{
+        margin-left: 10%;
+    }
+    
+    .third_section{
+        margin-left: 10%;
     }
 }
