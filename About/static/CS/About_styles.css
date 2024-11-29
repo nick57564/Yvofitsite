@@ -598,14 +598,14 @@ ul li a:hover {
         font-style: normal;
         font-weight: 500;
         color: rgb(0, 0, 0);
-        font-size: 16px;
+        font-size: 13px;
         line-height: 20px;
         margin: 0;
         padding-left: 40%;
     }
     
     .nav-menu li {
-        margin-right: 5px;
+        margin-right: 11px;
     }
     
     .nav-menu li:first-child {
@@ -615,7 +615,7 @@ ul li a:hover {
     .nav-menu li a {
         text-decoration: none;
         color: #000;
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 500;
         line-height: 20px;
         padding: 0;
@@ -638,10 +638,10 @@ ul li a:hover {
         display: flex;
         justify-content: space-between;
         height: 100%;
-        width: 165%;
+        width: 110%;
     }
     .text-section h2 {
-        padding-top: 5%;
+        padding-top: 10%;
         font-family: 'sans-serif', Pacifico;
         font-weight: 400;
         color: rgb(80, 69, 56);
@@ -679,7 +679,8 @@ ul li a:hover {
         font-size: 30px;
         line-height: 62px;
         margin-top: 15%;
-        max-width: 700px;
+        max-width: 80%;
+        margin-left: 10%;
     }
     .container_contact {
         width: 100%;  
@@ -794,5 +795,122 @@ ul li a:hover {
     .right_section a:hover {
         color: rgb(255, 255, 255);
         text-decoration: underline; 
+    }
+    .text-intrigeren h2 {
+        font-family: 'sans-serif', Pacifico;
+        font-weight: 400;
+        color: rgb(80, 69, 56);
+        font-size: 24px;
+        line-height: 36px;
+        margin-left: -10%;
+    }
+      
+    .text-intrigeren h1 {
+        font-family: 'Crimson Pro';
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        font-size: 48px;
+        line-height: 67px;
+        margin-left: -10%;
+    }
+      
+    .text-intrigeren p {
+        font-family: 'Work Sans';
+        font-weight: 400;
+        color: rgb(80, 69, 56);
+        font-size: 18px;
+        line-height: 33px;
+        max-width: 50%;
+        margin-left: -10%;
+    }
+    .elementor-section {
+        padding: 10%;
+        background-color: #f5f5f5;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        margin-top: 10%;
+        width: 80%; 
+    }
+    
+    .elementor-container {
+        display: inline;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        width: 70%; 
+        margin-left: 10%;
+        margin: 0 auto;
+    }
+    
+    .elementor-column {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px; 
+        margin-top: 10%;
+    }
+    
+    .elementor-icon-wrapper {
+        margin-bottom: 15px;
+    }
+    
+    .elementor-icon {
+        font-size: 50px;
+        color: #2FA582;
+    }
+    
+    
+    .elementor-heading-title {
+        font-family: 'Crimson Pro';
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .elementor-section-title {
+        font-family: 'Crimson Pro';
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        font-size: 48px;
+        line-height: 62px;
+        margin-left: 20%;
+    }
+    .text-Vitaliteit h2 {
+        font-family: 'sans-serif', Pacifico;
+        font-weight: 400;
+        color: rgb(80, 69, 56);
+        font-size: 24px;
+        line-height: 36px;
+        margin-left: -20%;
+    }
+      
+    .text-Vitaliteit h1 {
+        font-family: 'Crimson Pro';
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        font-size: 48px;
+        line-height: 67px;
+        margin-left: -20%;
+    }
+      
+    .text-Vitaliteit p {
+        font-family: 'Work Sans';
+        font-weight: 400;
+        color: rgb(80, 69, 56);
+        font-size: 18px;
+        line-height: 33px;
+        max-width: 50%;
+        margin-left: -20%;
+    }
+    .image-Vitaliteit img {
+        width: 1%; 
+        height: auto;
+        border-radius: 8px; 
     }
 }
