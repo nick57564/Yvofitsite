@@ -963,6 +963,13 @@ ul li a:hover {
         display: flex;
         gap: 8px;
     }
+    .approach-list_pijnpunten li::before {
+        content: '.';
+        color: #00c18d;
+        font-size: 5rem;
+        line-height: 1;
+        margin-top: -45px; 
+    }
     .container_reviews {
         display: flex;
         max-width: 100%;
@@ -993,5 +1000,119 @@ ul li a:hover {
         color: rgb(204, 195, 194);
         font-size: 30px;
         line-height: 55px;
+    }
+    .container_contact {
+        width: 130%;  
+        background-color: #504538;
+        color: #ffffff;
+        padding-top: 2%;
+    }
+    .container_contact_inner{
+        display: inline; 
+    }
+
+    .left_section, .middle_section, .right_section {
+        margin-left: 20%;
+    }
+
+    .left_section a {
+        font-family: 'Crimson Pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(255, 255, 255); 
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .middle_section h2 {
+        font-family: 'Crimson Pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: rgb(255, 255, 255); 
+        font-size: 38px;
+        line-height: 38px;
+        margin-top: 2%;
+    }
+
+    .middle_section ul li {
+        font-family: 'Work Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(106, 218, 180);
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .social_media_section ul {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .social_media_section ul li {
+        margin-right: 15px;
+    }
+
+    .fa-facebook, .fa-instagram, .fa-youtube, .fa-linkedin {  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        font-size: 25px;
+        width: 10px;
+        height: 10px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        background: #68C6B8; 
+        border-radius: 50%; 
+        color: black;
+    }
+
+    .fas.fa-phone-alt {  
+        font-size: 25px;  
+        color: #6ADAB4;    
+        margin-right: 2%; 
+    }
+
+    .far.fa-envelope {  
+        font-size: 25px;  
+        color: #6ADAB4;    
+    }
+
+    .right_section {
+        font-family: "Crimson Pro", sans-serif; 
+        font-weight: 600; 
+        font-size: 20px; 
+        line-height: 25px; 
+        color: rgb(255, 255, 255);
+    }
+
+    .right_section a {
+        color: rgb(255, 255, 255);
+        text-decoration: none; 
+    }
+
+    .right_section a:hover {
+        color: rgb(255, 255, 255);
+        text-decoration: underline; 
     }
 }
