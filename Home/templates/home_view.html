@@ -10,9 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="{% static 'CS/Home_styles.css' %}">    
+    <link rel="stylesheet" href="{% static 'CS/Home_styles.css' %}">
 </head>
 <body>
+    <div id="blur-background" class="blur-background"></div>
+    {% if message == "No cookies are enabled yet." %}
+    <div id="cookie-consent" class="cookie-modal" style="display: none;">
+        <div class="modal-content">
+            <img src="{% static 'IM/Logo_cockie.jpg' %}" alt="Cookie Logo" class="Cockie-logo">
+            <p>Om deze website goed te laten werken, maken we gebruik van cookies.</p>
+            <div>
+                <button onclick="acceptAllCookies()">Accept All</button>
+                <button onclick="acceptFunctionalCookies()">Only Functional</button>
+            </div>
+        </div>
+    </div>
+    {% endif %}
     <header>
         <nav>
             <div class="logo">
@@ -25,116 +38,142 @@
                 <li><a class="contact-btn" href="{% url 'contact_view' %}">CONTACT</a></li>
             </ul>
         </nav>
-    </header>   
-        <div class="container">
-            <div class="left-section">
-                <h2>Yvonne Aaldering, Vitaliteit coaching voor duurzame inzetbaarheid</h2>
-                <p>In veel organisaties kom ik dezelfde problemen tegen: hoge verzuimcijfers, medewerkers die niet optimaal presteren, of collega’s die zich niet op hun plek voelen.</p>
-                <p>Een gebrek aan werkplezier en motivatie verspreidt zich vaak als een olievlek door het team, wat de werkcultuur en samenwerking negatief beïnvloedt.</p>
-                <p>Voeg daarbij de uitdagingen van een ongezonde leefstijl, zoals weinig energie, slecht slapen, en overgewicht, en het effect op productiviteit en werkplezier wordt nog duidelijker.</p>
-                <p>In de huidige werkomgeving zien we steeds vaker medewerkers die worstelen met hun vitaliteit. Dit leidt tot verzuim, onproductiviteit en een gebrek aan motivatie. </p>
-                <p>Medewerkers zitten niet op de juiste plek, ervaren geen werkplezier en beïnvloeden daarmee ook hun collega’s negatief.</p>
-                <p>Dit is niet alleen frustrerend voor de medewerkers zelf, maar ook voor de organisatie als geheel.</p>
-                <a class="appointment-btn" href="{% url 'contact_view' %}">Maak een afspraak</a>
-                <p class="small-text">Plan een vrijblijvend 30 minuten inspiratiegesprek.</p>
-            </div>
-            <div class="right-section">
-                <h3>Gezonde en gemotiveerde medewerkers op de werkvloer.</h3>
-                <img src="{% static 'IM/yvofit-home-2.png' %}" alt="Yvonne Aaldering" class="yvonne-image">
-            </div>
+    </header>
+    <div class="container">
+        <div class="left-section">
+            <h2>Yvonne Aaldering, Vitaliteit coaching voor duurzame inzetbaarheid</h2>
+            <p>In veel organisaties kom ik dezelfde problemen tegen: hoge verzuimcijfers, medewerkers die niet optimaal presteren, of collega’s die zich niet op hun plek voelen.</p>
+            <p>Een gebrek aan werkplezier en motivatie verspreidt zich vaak als een olievlek door het team, wat de werkcultuur en samenwerking negatief beïnvloedt.</p>
+            <p>Voeg daarbij de uitdagingen van een ongezonde leefstijl, zoals weinig energie, slecht slapen, en overgewicht, en het effect op productiviteit en werkplezier wordt nog duidelijker.</p>
+            <p>In de huidige werkomgeving zien we steeds vaker medewerkers die worstelen met hun vitaliteit. Dit leidt tot verzuim, onproductiviteit en een gebrek aan motivatie. </p>
+            <p>Medewerkers zitten niet op de juiste plek, ervaren geen werkplezier en beïnvloeden daarmee ook hun collega’s negatief.</p>
+            <p>Dit is niet alleen frustrerend voor de medewerkers zelf, maar ook voor de organisatie als geheel.</p>
+            <a class="appointment-btn" href="{% url 'contact_view' %}">Maak een afspraak</a>
+            <p class="small-text">Plan een vrijblijvend 30 minuten inspiratiegesprek.</p>
         </div>
-        <div class="container_scroll">
-                <h2 class="Big_text_scroll">Dagelijks houd ik me bezig met het coachen, motiveren, trainen en begeleiden van werknemers en managers bij bedrijven. Voor meer vitaliteit op de werkvloer.</h2>
+        <div class="right-section">
+            <h3>Gezonde en gemotiveerde medewerkers op de werkvloer.</h3>
+            <img src="{% static 'IM/yvofit-home-2.png' %}" alt="Yvonne Aaldering" class="yvonne-image">
         </div>
-        <div class="container_mij">
-            <div class="left-section_mij">
-                <img src="{% static 'IM/yvofit-fruitschaal.jpg' %}" alt="Yvonne" class="yvofit-fruitschaal">
-                <img src="{% static 'IM/zwembad-dolfijn.jpeg' %}" alt="Yvonne" class="zwembad-dolfijn">
-            </div>
-            <div class="right-section_mij">
-                <h3 class="title-overmij">Over mij</h3>
-                <h2 class="subtitle-overmij">Persoonlijk betrokken en altijd maatadvies wat bij jouw past!</h2>
-                <p class="mij-text">Van jongs af aan ben ik een echte mensenmens. Ik ben altijd gefascineerd door de redenen achter iemands woorden en daden.</p>
-                <p class="mij-text">Wat beweegt mensen? Gezondheid en een gezonde leefstijl zijn altijd mijn passie geweest, iets wat ik van mijn moeder heb meegekregen.</p>
-                <p class="mij-text">Zij had een moestuintje en was van de natuurlijke middeltjes, zij geloofde in natuurlijke oplossingen boven het lichaam volstoppen met medicatie, waarmee je niet de oorzaak aanpakt, maar alleen symptomen bestrijdt. En zo denk ik er ook over.</p>
-                <p class="mij-text">In oktober 2003 heb ik mijn eigen praktijk vanuit huis voor voeding en gezonde leefstijl opgericht. Toen de kinderen zelfstandig naar school konden ben ik me gaan richten op bedrijven en een gezond werkklimaat. Dat doe ik inmiddels 7 jaar met heel veel passie en plezier voor verschillende bedrijven. </p>
-            </div>
+    </div>
+    <div class="container_scroll">
+        <h2 class="Big_text_scroll">Dagelijks houd ik me bezig met het coachen, motiveren, trainen en begeleiden van werknemers en managers bij bedrijven. Voor meer vitaliteit op de werkvloer.</h2>
+    </div>
+    <div class="container_mij">
+        <div class="left-section_mij">
+            <img src="{% static 'IM/yvofit-fruitschaal.jpg' %}" alt="Yvonne" class="yvofit-fruitschaal">
+            <img src="{% static 'IM/zwembad-dolfijn.jpeg' %}" alt="Yvonne" class="zwembad-dolfijn">
         </div>
-        <div class="bottem-section_werkdruk">
-            <img src="{% static 'IM/Yvofit-bank.png' %}" alt="Yvonne" class="yvofit-bank">
+        <div class="right-section_mij">
+            <h3 class="title-overmij">Over mij</h3>
+            <h2 class="subtitle-overmij">Persoonlijk betrokken en altijd maatadvies wat bij jouw past!</h2>
+            <p class="mij-text">Van jongs af aan ben ik een echte mensenmens. Ik ben altijd gefascineerd door de redenen achter iemands woorden en daden.</p>
+            <p class="mij-text">Wat beweegt mensen? Gezondheid en een gezonde leefstijl zijn altijd mijn passie geweest, iets wat ik van mijn moeder heb meegekregen.</p>
+            <p class="mij-text">Zij had een moestuintje en was van de natuurlijke middeltjes, zij geloofde in natuurlijke oplossingen boven het lichaam volstoppen met medicatie, waarmee je niet de oorzaak aanpakt, maar alleen symptomen bestrijdt. En zo denk ik er ook over.</p>
+            <p class="mij-text">In oktober 2003 heb ik mijn eigen praktijk vanuit huis voor voeding en gezonde leefstijl opgericht. Toen de kinderen zelfstandig naar school konden ben ik me gaan richten op bedrijven en een gezond werkklimaat. Dat doe ik inmiddels 7 jaar met heel veel passie en plezier voor verschillende bedrijven. </p>
         </div>
-        <div class="card">
-            <div class="content">
-                <h1>Werkdruk en werkstress</h1>
-                <p>Zorgen vaak voor minder productiviteit, meer prikkelbaarheid en meer verzuim. Oorzaak kan zowel door het werk als door privé factoren komen. Samen met de medewerker bekijk ik welke praktische oplossingen helpend kunnen zijn zodat de medewerker zo optimaal mogelijk kan presteren.</p>
-                <a href="#" class="button">Lees Meer</a>
-            </div>
-        </div> 
-        <div class="Reviews_qoutes">
-            <h2>Wat zeggen klanten over mijn diensten?</h2>
-            <h1>Reviews</h1>
+    </div>
+    <div class="bottem-section_werkdruk">
+        <img src="{% static 'IM/Yvofit-bank.png' %}" alt="Yvonne" class="yvofit-bank">
+    </div>
+    <div class="card">
+        <div class="content">
+            <h1>Werkdruk en werkstress</h1>
+            <p>Zorgen vaak voor minder productiviteit, meer prikkelbaarheid en meer verzuim. Oorzaak kan zowel door het werk als door privé factoren komen. Samen met de medewerker bekijk ik welke praktische oplossingen helpend kunnen zijn zodat de medewerker zo optimaal mogelijk kan presteren.</p>
+            <a href="#" class="button">Lees Meer</a>
         </div>
-        <div class="container_reviews">
-            <div class="left_section_reviews">
-                <h2>Busmaatschappij Arriva</h2>
-                <div class="hr-lines"></div> 
-                <p><i aria-hidden="true" class="fas fa-quote-right"></i> Toen de keuringsarts constateerde dat mijn suiker te hoog was, besloot ik actie te ondernemen. Via mijn werkgever kreeg ik Yvonne als vitaliteitscoach. Ik vond het lastig om mijn bourgondische stijl te veranderen, maar door het enthousiasme en goede begeleiding van Yvonne is het me toch gelukt! Eindresultaat, streefgewicht gehaald, bloeddruk omlaag, suiker waardes flink verbeterd, conditie omhoog! Ik kan mijn schoenen weer op een normale manier dichtdoen 😜 Gerrit 64 jaar.</p>
-            </div>
-            <div class="right_section_reviews">
-                <h2>Peter 62 jaar</h2>
-                <div class="hr-lines"></div> 
-                <p><i aria-hidden="true" class="fas fa-quote-right"></i> Mijn ervaringen met Yvonne? Yvonne is een toppertje!! Vanuit mijn werkgever mocht ik mee doen met een lifestyle coaching traject. De 4 diëtisten die ik tot nu toe gehad heb, werken allemaal op dezelfde manier. Je krijgt papieren en een boekje. 1 x per maand wegen en meer niet. Yvonne niet, zij geeft jouw het gevoel er voor je te zijn, staat altijd klaar met persoonlijke tips. Weet de valkuilen en waar je geestelijk  tegenaan loopt. Ze weet je perfect op het goede spoor terug te brengen. Ook wist ze mij en mijn omgeving te stimuleren om door te gaan en er een schepje bovenop te doen.</p>
-            </div>    
+    </div> 
+    <div class="Reviews_qoutes">
+        <h2>Wat zeggen klanten over mijn diensten?</h2>
+        <h1>Reviews</h1>
+    </div>
+    <div class="container_reviews">
+        <div class="left_section_reviews">
+            <h2>Busmaatschappij Arriva</h2>
+            <div class="hr-lines"></div> 
+            <p><i aria-hidden="true" class="fas fa-quote-right"></i> Toen de keuringsarts constateerde dat mijn suiker te hoog was, besloot ik actie te ondernemen. Via mijn werkgever kreeg ik Yvonne als vitaliteitscoach. Ik vond het lastig om mijn bourgondische stijl te veranderen, maar door het enthousiasme en goede begeleiding van Yvonne is het me toch gelukt! Eindresultaat, streefgewicht gehaald, bloeddruk omlaag, suiker waardes flink verbeterd, conditie omhoog! Ik kan mijn schoenen weer op een normale manier dichtdoen 😜 Gerrit 64 jaar.</p>
         </div>
-        <div class="container_pijnpunten">
-            <div class="content_pijnpunten">
-                <h1>Herken je deze pijnpunten?</h1>
-                <ul class="approach-list_pijnpunten">
-                    <li>Hoge verzuimcijfers: Medewerkers die regelmatig afwezig zijn, kosten niet alleen geld, maar ook waardevolle tijd en energie.</li>
-                    <li>Onvoldoende productiviteit: Wanneer medewerkers niet in hun kracht staan, lijdt de algehele productiviteit van het team. En daarmee laat je ook geld liggen als organisatie</li>
-                    <li>Gebrek aan werkplezier: Medewerkers die zich niet gelukkig voelen in hun werk, stralen dit uit en beïnvloeden de sfeer op de werkvloer.</li>
-                    <li>Ongezonde leefstijl: Veel medewerkers worstelen met een ongezonde leefstijl, wat kan leiden tot vermoeidheid, slechte slaap, overgewicht, verhoogde bloeddruk, diabetes.  Dit heeft een directe impact op hun prestaties en welzijn is mijn ervaring.</li>
+        <div class="right_section_reviews">
+            <h2>Peter 62 jaar</h2>
+            <div class="hr-lines"></div> 
+            <p><i aria-hidden="true" class="fas fa-quote-right"></i> Mijn ervaringen met Yvonne? Yvonne is een toppertje!! Vanuit mijn werkgever mocht ik mee doen met een lifestyle coaching traject. De 4 diëtisten die ik tot nu toe gehad heb, werken allemaal op dezelfde manier. Je krijgt papieren en een boekje. 1 x per maand wegen en meer niet. Yvonne niet, zij geeft jouw het gevoel er voor je te zijn, staat altijd klaar met persoonlijke tips. Weet de valkuilen en waar je geestelijk  tegenaan loopt. Ze weet je perfect op het goede spoor terug te brengen. Ook wist ze mij en mijn omgeving te stimuleren om door te gaan en er een schepje bovenop te doen.</p>
+        </div>    
+    </div>
+    <div class="container_pijnpunten">
+        <div class="content_pijnpunten">
+            <h1>Herken je deze pijnpunten?</h1>
+            <ul class="approach-list_pijnpunten">
+                <li>Hoge verzuimcijfers: Medewerkers die regelmatig afwezig zijn, kosten niet alleen geld, maar ook waardevolle tijd en energie.</li>
+                <li>Onvoldoende productiviteit: Wanneer medewerkers niet in hun kracht staan, lijdt de algehele productiviteit van het team. En daarmee laat je ook geld liggen als organisatie</li>
+                <li>Gebrek aan werkplezier: Medewerkers die zich niet gelukkig voelen in hun werk, stralen dit uit en beïnvloeden de sfeer op de werkvloer.</li>
+                <li>Ongezonde leefstijl: Veel medewerkers worstelen met een ongezonde leefstijl, wat kan leiden tot vermoeidheid, slechte slaap, overgewicht, verhoogde bloeddruk, diabetes.  Dit heeft een directe impact op hun prestaties en welzijn is mijn ervaring.</li>
+            </ul>
+        </div>
+        <div class="image_pijnpunten">
+            <img src="{% static 'IM/Yvofit-Laptop.png' %}" alt="Yvonne met laptop">
+        </div>    
+    </div>
+    <div class="container_contact">
+        <div class="container_contact_inner">
+            <div class="left_section">
+                <ul>
+                    <li><a class="nav-link" href="{% url 'base_view' %}">HOME</a></li>
+                    <li><a class="nav-link" href="{% url 'about_view' %}">DIENSTEN</a></li>
+                    <li><a class="nav-link" href="{% url 'blog_view' %}">BLOG</a></li>
+                    <li><a class="nav-link" href="{% url 'contact_view' %}">CONTACT</a></li>
                 </ul>
             </div>
-            <div class="image_pijnpunten">
-                <img src="{% static 'IM/Yvofit-Laptop.png' %}" alt="Yvonne met laptop">
-            </div>    
-        </div>
-        <div class="container_contact">
-            <div class="container_contact_inner">
-                <div class="left_section">
+            <div class="middle_section">
+                <h2>Diensten</h2>
+                <ul>
+                    <li><a class="nav-link" href="{% url 'about_view' %}">VITALE WERKOMGEVING!</a></li>
+                    <li><a class="nav-link" href="{% url 'about_view' %}">PERSOONLIJKE COACHING MEDEWERKERS</a></li>
+                    <li><a class="nav-link" href="{% url 'about_view' %}">VITALITEITS TRAININGEN VOOR GROEPEN</a></li>
+                </ul>
+            </div>
+            <div class="right_section">
+                <h2><i aria-hidden="true" class="fas fa-phone-alt"></i>0499-396985</h2>
+                <h2><i aria-hidden="true" class="fas fa-phone-alt"></i>06-10792050</h2>
+                <h2>
+                    <a href="mailto:yvonne@yvofit.nl"><i class="far fa-envelope"></i> yvonne@yvofit.nl</a>
+                </h2>
+                <div class="social_media_section">
+                    <p>VOLG YVOFIT OP SOCIAL MEDIA</p>
                     <ul>
-                        <li><a class="nav-link" href="{% url 'base_view' %}">HOME</a></li>
-                        <li><a class="nav-link" href="{% url 'about_view' %}">DIENSTEN</a></li>
-                        <li><a class="nav-link" href="{% url 'blog_view' %}">BLOG</a></li>
-                        <li><a class="nav-link" href="{% url 'contact_view' %}">CONTACT</a></li>
-                    </ul>
-                </div>
-                <div class="middle_section">
-                    <h2>Diensten</h2>
-                    <ul>
-                        <li><a class="nav-link" href="{% url 'about_view' %}">VITALE WERKOMGEVING!</a></li>
-                        <li><a class="nav-link" href="{% url 'about_view' %}">PERSOONLIJKE COACHING MEDEWERKERS</a></li>
-                        <li><a class="nav-link" href="{% url 'about_view' %}">VITALITEITS TRAININGEN VOOR GROEPEN</a></li>
-                    </ul>
-                </div>
-                <div class="right_section">
-                    <h2><i aria-hidden="true" class="fas fa-phone-alt"></i>0499-396985</h2>
-                    <h2><i aria-hidden="true" class="fas fa-phone-alt"></i>06-10792050</h2>
-                    <h2>
-                        <a href="mailto:yvonne@yvofit.nl"><i class="far fa-envelope"></i> yvonne@yvofit.nl</a>
-                    </h2>
-                    <div class="social_media_section">
-                        <p>VOLG YVOFIT OP SOCIAL MEDIA</p>
-                        <ul>
-                            <li><a href="#" class="fab fa-facebook"></a></li>
-                            <li><a href="#" class="fab fa-instagram"></a></li>
-                            <li><a href="#" class="fab fa-youtube"></a></li>
-                            <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>  
-                    </div>
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-instagram"></a></li>
+                        <li><a href="#" class="fab fa-youtube"></a></li>
+                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                    </ul>  
                 </div>
             </div>
         </div>
+    </div>
+    <script>
+        function acceptAllCookies() {
+            document.cookie = "cookies_accepted=true; path=/";
+            hideCookieModal();
+        }
+    
+        function acceptFunctionalCookies() {
+            document.cookie = "functional_cookies=true; path=/";
+            hideCookieModal();
+        }
+    
+        function hideCookieModal() {
+            document.querySelector('#cookie-consent').style.display = 'none';
+            document.querySelector('#blur-background').style.display = 'none';
+        }
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            const cookiesAccepted = document.cookie.includes('cookies_accepted=true');
+            const functionalCookies = document.cookie.includes('functional_cookies=true');
+    
+            if (!cookiesAccepted && !functionalCookies) {
+                document.querySelector('#cookie-consent').style.display = 'block';
+                document.querySelector('#blur-background').style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
